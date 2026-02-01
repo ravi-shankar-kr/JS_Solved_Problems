@@ -25,7 +25,7 @@ console.log(first + last);
 let a = 10;
 console.log(a);
 
-a = 20;
+a++;     
 console.log(a);
 
 
@@ -58,18 +58,62 @@ console.log(100/0);
 
 // 2. Variables and Data Types (10 Questions)
 // 	11.	Declare a variable using let and log its value.
+let num = 10;
+console.log(num);
+
+
 // 	12.	Create a constant to store the value of PI and log it.
-// 	13.	Reassign a value to a variable declared with let and log the result.
+const PI = Math.PI;
+console.log(PI);
+
+
+// 	13.	Reassign a value to a variable declared with let and log the result. 
+let val1 = 39;
+val1 = 34;
+console.log(val1);
+
+
+
 // 	14.	Check the type of null and log it.
+let nul = null
+console.log(typeof nul);
+
+
 // 	15.	Create a variable with a number as a string (e.g., "25") and log its type.
+let num1 = "25";
+console.log(typeof num1);
+
+
 // 	16.	Use typeof to check the type of a boolean variable.
+let tr = true;
+console.log(tr);
+
+
 // 	17.	Create three variables of types string, number, and boolean, and log their values.
+let val2 = 12;
+let val3 = "ravi";
+let val4 = false;
+console.log(val2, val3, val4);
+
+
 // 	18.	Declare a variable without assigning a value. Log its type.
+let val5;
+console.log(val5);
+
 // 	19.	Create a variable with undefined and log its type.
+let val6 = undefined;
+console.log(val6);
+
 // 	20.	Use const to create an array. Try reassigning the array and observe the error.
+// const arr = [2, 5, 7];
+// arr = [4, 9, 8]
+// console.log(arr);
+
 
 // 3. Loops (10 Questions)
 // 	21.	Write a for loop to print numbers from 1 to 50.
+
+
 // 	22.	Use a while loop to sum the numbers from 1 to 10.
 // 	23.	Create a for...of loop to log each character of the string "JavaScript".
 // 	24.	Write a for loop that skips even numbers between 1 and 20.
