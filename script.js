@@ -56,6 +56,10 @@ if ( age > 18) {
 console.log(100/0);
 
 
+
+
+
+
 // 2. Variables and Data Types (10 Questions)
 // 	11.	Declare a variable using let and log its value.
 let num = 10;
