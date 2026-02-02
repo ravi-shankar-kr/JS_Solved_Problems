@@ -1,3 +1,5 @@
+// 27, 28, 
+
 // Here is a collection of 100 JavaScript questions, divided into groups of 10, based on topics 1-8, with increasing complexity.
 
 // 1. Basic Console Usage (10 Questions)
@@ -114,19 +116,111 @@ console.log(val6);
 // console.log(arr);
 
 
+
+
+
+
 // 3. Loops (10 Questions)
 // 	21.	Write a for loop to print numbers from 1 to 50.
+for (let  i = 0;  i <= 50;  i++) {
+     console.log(i);
+     
+    
+}
 
 
 // 	22.	Use a while loop to sum the numbers from 1 to 10.
+let sum = 0;
+for (let  i = 0;  i <= 50;  i++) {
+     sum += i;   
+}
+console.log(sum);
+
+
 // 	23.	Create a for...of loop to log each character of the string "JavaScript".
+let name = "Ravi"
+for(char of name){
+    console.log(char);
+    
+}
+
+
 // 	24.	Write a for loop that skips even numbers between 1 and 20.
+for (let  i = 0;  i <= 20;  i++) {
+    if (i%2 == 0) {
+        continue
+    }
+    console.log(i); 
+}
+
+
+
 // 	25.	Use a do...while loop to log numbers from 5 to 1.
+let j = 5
+do {
+    console.log(j);
+    j--;
+    
+} while (j >=1);
+
+
 // 	26.	Create a for loop that calculates the factorial of 5.
+let fact = 1;
+for (let  i = 1;  i <= 5; i++ ) {
+    fact = fact * i; 
+}
+console.log(fact);
+
+
+
 // 	27.	Write a nested loop to print a 3x3 grid of numbers.
+// let num2 = 1;
+// for (let  i = 1;  i <= 3;  i++) {
+//     let row = "";
+//     for (let j = 1; j <= 3; j++) {
+//     }
+      
+// }
+//  console.log(row); 
+
+
+
+
 // 	28.	Use a for loop to reverse an array [1, 2, 3, 4].
+// let arr = [1, 2, 3, 4]
+// let start = 0;
+// let end = Array.length -1;
+// for(start< end; start++; end --){
+//     let temp = arr[start];
+//     arr[start] = arr[end];
+//     arr[end] = temp;
+//     console.log(end);
+    
+// }
+ 
+
+
+ 
+
+
 // 	29.	Write a while loop that logs numbers from 1 to 100 divisible by 5.
+let num3 = 5;
+while (num3 <= 100) {
+    if ( num3 %5 == 0) {
+        console.log(num3);
+        
+    }
+    num3++;
+}
+
+
 // 	30.	Use a for...in loop to iterate over an object and log its keys.
+const obj = {name:"Ravi", age:23};
+for(key in obj){
+    console.log(key, ":", obj[key]);
+    
+}
+
 
 // 4. Arrays (10 Questions)
 // 	31.	Create an array of your top 5 favorite movies and log it.
@@ -153,7 +247,7 @@ console.log(val6);
 // 	50.	Create a function that logs "Hello, World!" every time it is called.
 
 // 6. Conditionals (10 Questions)
-// 	51.	Write a program to check if a number is positive, negative, or zero.
+// 	51.	Write a p;rogram to check if a number is positive, negative, or zero.
 // 	52.	Create a program to check if a year is a leap year.
 // 	53.	Write an if...else statement to determine if a person can vote based on their age.
 // 	54.	Use a switch statement to log the name of the day based on its number (1 = Monday).
