@@ -1,4 +1,4 @@
-// 27, 28, 
+// 27, 28, 47,49
 
 // Here is a collection of 100 JavaScript questions, divided into groups of 10, based on topics 1-8, with increasing complexity.
 
@@ -224,8 +224,19 @@ for(key in obj){
 
 // 4. Arrays (10 Questions)
 // 	31.	Create an array of your top 5 favorite movies and log it.
+let arr = ["money heist", "Pirates of the Caribbean", "ravi", "abcd", "defg"];
+console.log(arr);
+
+
 // 	32.	Find and log the second element of an array.
+console.log(arr[1]);
+
+
 // 	33.	Add two new elements to the start of an array using .unshift().
+arr.unshift("vishu")
+console.log(arr);
+
+
 // 	34.	Remove the last element of an array and log the updated array.
 // 	35.	Use .slice() to extract the first three elements of an array.
 // 	36.	Find the index of a specific element in an array using .indexOf().
@@ -236,15 +247,137 @@ for(key in obj){
 
 // 5. Functions (10 Questions)
 // 	41.	Write a function to check if a number is even or odd.
+
+let num4 = 10;
+function  evenOdd() {
+    if ( num4 %2 == 0) {
+        console.log("even");
+        
+    }else{
+        console.log("odd");
+        
+    }
+}
+
+evenOdd();
+
+
+
 // 	42.	Create a function to calculate the area of a circle with a given radius.
+function  areaOfCircle(r) {
+
+    let pi = Math.PI
+    console.log("area of circle is ", pi*r*r);
+    
+}
+
+areaOfCircle(2);
+
+
+
 // 	43.	Write a function that accepts an array and returns the sum of its elements.
+function  arrays(arr = [...rest]) {
+     let sumar = 0;
+    for (let  i = 0;  i < arr.length;  i++) { 
+       sumar += arr[i];    
+    }
+    
+    console.log(arr);
+    console.log(sumar);
+}
+
+arrays([3, 6, 9]);
+
+
+ 
 // 	44.	Create a function that checks if a string starts with a specific character.
+function  str(name) {
+    let ch = "r";
+    
+      if (name[0] == ch) {
+        console.log("start");
+        
+      }else{
+        console.log("not start");
+        
+      }
+}
+
+str("ravi")
+
+
+
+// let namer = "ravi"
+// for(key in namer ){
+//     console.log(key, namer[key]);
+    
+// }
+
+
 // 	45.	Write a function to find the maximum of two numbers.
+function  max(a, b) {
+    if (a > b) {
+        console.log(a);
+        
+    }else{
+        console.log(b);
+        
+    }
+    
+}
+
+max(53,9)
+
+
+
 // 	46.	Create a function that takes a number and returns its factorial.
+function  facto(num) {
+    let fact = 1;
+    if ( num == 0) {
+        console.log(1);
+    }else if ( num == 1) {
+        console.log(1);
+    }else {
+        for (let  i = 1;  i <= num;  i++) {
+         fact *= i;   
+        }
+    }
+    
+    console.log(fact);
+}
+
+facto(5)
+
+
 // 	47.	Write a function that accepts a string and returns its reverse.
+// function  String(name) {
+//     console.log(name.());   
+// }
+// String("ravi")
+
+
 // 	48.	Create a function to find the largest number in an array.
+function findLargest(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) max = arr[i];
+    }
+     console.log(max);
+     ;
+}
+const numbers = [20, 10, 20, 4, 100, 340];
+findLargest(numbers);
+
 // 	49.	Write a function that converts a string to kebab-case (e.g., "Hello World" → "hello-world").
+
+
 // 	50.	Create a function that logs "Hello, World!" every time it is called.
+// setInterval(() => {
+//     console.log("Hello, world!");
+    
+// },  2000);
+
+
 
 // 6. Conditionals (10 Questions)
 // 	51.	Write a p;rogram to check if a number is positive, negative, or zero.
