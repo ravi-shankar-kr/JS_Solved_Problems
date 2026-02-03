@@ -1,4 +1,4 @@
-// 27, 28, 47,49
+// 27, 28, 47,49, 68, 69, 70
 
 // Here is a collection of 100 JavaScript questions, divided into groups of 10, based on topics 1-8, with increasing complexity.
 
@@ -238,12 +238,39 @@ console.log(arr);
 
 
 // 	34.	Remove the last element of an array and log the updated array.
+arr.pop();
+console.log(arr);
+
 // 	35.	Use .slice() to extract the first three elements of an array.
+let Slice = arr.slice(0, 3)
+console.log(Slice);
+console.log(arr);
+
+
 // 	36.	Find the index of a specific element in an array using .indexOf().
+console.log(arr.indexOf("ravi"));
+
+
 // 	37.	Check if a value exists in an array using .includes().
+console.log(arr.includes("ravi"));
+
 // 	38.	Combine two arrays [1, 2] and [3, 4] using .concat().
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+
+console.log(arr1.concat(arr2));
+
 // 	39.	Sort an array of numbers [5, 2, 9, 1] in ascending order.
+let arr3 = [5, 2, 9, 1];
+console.log(arr3.sort((a,b) => a-b));
+
 // 	40.	Write a program that creates a copy of an array without mutating the original.
+let arr4 = [...arr3];
+arr4.push(6)
+console.log(arr4);
+console.log(arr3);
+
+
 
 // 5. Functions (10 Questions)
 // 	41.	Write a function to check if a number is even or odd.
@@ -381,38 +408,310 @@ findLargest(numbers);
 
 // 6. Conditionals (10 Questions)
 // 	51.	Write a p;rogram to check if a number is positive, negative, or zero.
+ 
+function  checkNum( num) {
+    if ( num > 0) {
+    console.log("positive");
+    
+} else if(num< 0) {
+    console.log("negative");
+    
+}else{
+    console.log("zero");
+    
+}
+    
+}
+
+checkNum(-30);
+
+
 // 	52.	Create a program to check if a year is a leap year.
+let year = 2026;
+if (year %100 == 0 ) {
+    console.log("this is not a leap year");
+    
+    
+} else if(year % 4 == 0 && year % 400){
+    console.log("this is leap year");
+    
+}else{
+    console.log("this is not leap year");
+    
+}
+
+
+
 // 	53.	Write an if...else statement to determine if a person can vote based on their age.
+let age1 = 40;
+if ( age1> 18) {
+    console.log("you can vote");
+    
+} else {
+    console.log("bacche khelo jakr");
+    
+}
+
+
 // 	54.	Use a switch statement to log the name of the day based on its number (1 = Monday).
+let day = 1;
+switch ( day) {
+    case 1:
+        console.log("monday");
+        break;
+     case 2:
+        console.log("tuesday");
+        break;
+     case 3:
+        console.log("wednesday");
+        break;
+     case 4:
+        console.log("thursday");
+        break;
+     case 5:
+        console.log("friday");
+        break;
+     case 6:
+        console.log("saturday");
+        break;
+     case 7:
+        console.log("sunday");
+        break;
+
+    default:
+        console.log("invalid day");
+        break;
+}
+
+
 // 	55.	Write a program to check if a number is divisible by 3 and 5.
+let num5 = 40;
+if (num5 % 3 == 0 && num5 % 5 == 0 ) {
+    console.log("yes it is divisible");
+    
+} else {
+    console.log("is is not divisible");
+    
+    
+}
+
+
 // 	56.	Create a program to check the grade of a student based on marks.
+let marks = 60;
+if ( marks>= 60) {
+    console.log("first");
+    
+}else if ( marks>= 50) {
+    console.log("second");
+    
+}else if ( marks>= 30) {
+    console.log("third");
+    
+}else{
+    console.log("fail");
+    
+}
+
 // 	57.	Write an if condition to compare two strings and log if they are equal.
+let str1 = "ravi";
+let str2 = "ravi";
+if ( str1 === str2) {
+    console.log("equal");
+    
+} else {
+    console.log("not equal");
+    
+}
+
+
+
 // 	58.	Use a ternary operator to check if a number is even or odd.
+console.log((8%2==0)? "even": "odd");
+
+
+
 // 	59.	Write a program to find the largest of three numbers using if...else.
+let p = 35;
+let q = 34;
+let r = 40
+
+if ( p > q &&  p > r) {
+    console.log(p);
+    
+} else if ( q>r && q>p ) {
+    console.log(q);
+    
+}else{
+    console.log(r);
+    
+}
+
+
+
 // 	60.	Create a program to calculate the discount based on the price of an item.
+let item = 1500;
+if (item > 10000) {
+    console.log("you got 40 percect discount");
+    
+}if (item > 5000) {
+    console.log("you got 20 percect discount");
+    
+}if (item > 1000) {
+    console.log("you got 10 percect discount");
+    
+}else{
+    console.log("you have no discount");
+    
+}
+
+
+
 
 // 7. Object Basics (10 Questions)
 // 	61.	Create an object with properties name, age, and city. Log the object.
+const user = {
+    name:"ravi",
+    age:23,
+    city:"Delhi"
+}
+
+console.log(user);
+
+
 // 	62.	Add a new property isStudent to the object above and set it to true.
+user.isStudent = true
+console.log(user);
+
+
 // 	63.	Access and log the value of the city property using bracket notation.
+console.log(user["city"]);
+
+
 // 	64.	Delete the age property from an object and log the updated object.
+delete user.age;
+console.log(user);
+
 // 	65.	Write a function that accepts an object and logs all its keys.
+function  objj() {
+    for(key in user){
+        console.log(key, ": ", user[key]);
+    } 
+}
+
+objj(user);
+
+
 // 	66.	Create an array of objects representing books with title and author properties.
+const books = [ {
+    title: "Zero to one",
+    author: {
+        name:"ravi",
+        age:23,
+        city:"Delhi"
+        }
+    },
+    {
+
+    title: "Zero to hundred",
+    author: {
+        name:"ravi kashyap",
+        age:23,
+        city:"Delhi"
+        }
+    },
+    {
+
+    title: "Zero to one",
+    author: {
+        name:"ravi",
+        age:23,
+        city:"Delhi"
+        }
+    }
+]
 // 	67.	Access and log the author of the second book in the array.
+console.log(books[1]);
+
+
+
 // 	68.	Write a program to check if a specific key exists in an object.
+// let specificKey = { name: 'ravi kashyap', age: 23, city: 'Delhi' }
+// let check = name;
+// for(key in specificKey){
+//     if (specificKey[key] == check) {
+//         console.log(true);
+        
+//     }else{
+//         console.log(false);
+        
+//     }
+//     console.log(specificKey[key]);
+    
+// }
+
+
+
+
 // 	69.	Create a function to count the number of keys in an object.
+
+// function  countKey(user) {
+//     let count =  0;
+    
+//     for(kay in user){
+        
+//         count++;
+//     }
+    
+    
+//     console.log(count);
+    
+// }
+
+// countKey(user);
 // 	70.	Use Object.assign() to merge two objects.
+
+
+
 
 // 8. String Manipulation (10 Questions)
 // 	71.	Create a string and log its length.
+const fullName = "Ravi Kashyap ";
+console.log(fullName.length);
+
+
 // 	72.	Extract the last 4 characters of a string.
+console.log(fullName.slice(8,12));
+
+
 // 	73.	Convert a string to lowercase and log it.
+console.log(fullName.toLowerCase());
+
+
 // 	74.	Split a sentence into words using .split() and log the result.
+const sectence = "my name is Ravi"
+console.log(sectence.split());
+
+
 // 	75.	Find the position of the first occurrence of "a" in a string.
+console.log(sectence.indexOf("a"));
+
+
 // 	76.	Replace "JavaScript" with "JS" in the string "I love JavaScript".
+let js = "javaScript";
+console.log(js.replace("javaScript", "I love javaScript"));
+
 // 	77.	Repeat a string 3 times using .repeat().
+console.log(fullName.repeat(3));
+
+
+
 // 	78.	Create a function that checks if a string contains a specific word.
+
 // 	79.	Write a program to remove whitespace from both ends of a string.
+let surname = " kashyap "
+console.log(surname.trim());
+
+
 // 	80.	Create a function to count the number of vowels in a string.
 
 // Mixed Practice (20 Questions)
